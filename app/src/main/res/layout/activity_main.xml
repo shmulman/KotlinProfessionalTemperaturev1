@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/Temperature_Final"
+            android:text="@string/TemperatureFinalString"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+
+
+
+    <TableLayout
+            android:id="@+id/TableMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Temperature_Final">
+
+        <TableRow>
+            <TextView
+                    android:id="@+id/table1_1"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fadeScrollbars="true"
+                    android:gravity="center"
+            />
+            <TextView
+                    android:id="@+id/table1_2"
+                    android:text="Measurement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fadeScrollbars="true"
+                    android:gravity="center"
+            />
+            <TextView
+                    android:id="@+id/table1_3"
+                    android:text="Validity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fadeScrollbars="true"
+                    android:gravity="center"
+            />
+            <TextView
+                    android:id="@+id/table1_4"
+                    android:text="Result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fadeScrollbars="true"
+                    android:gravity="center"
+            />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                    android:id="@+id/table2_1"
+                    android:text="Sensor 200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fadeScrollbars="true"
+                    android:gravity="center"
+            />
+            <TextView
+                    android:id="@+id/table2_2"
+                    android:text="25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fadeScrollbars="true"
+                    android:gravity="center"
+            />
+            <TextView
+                    android:id="@+id/table2_3"
+                    android:text="YES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fadeScrollbars="true"
+                    android:gravity="center"
+            />
+            <TextView
+                    android:id="@+id/table2_4"
+                    android:text="25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fadeScrollbars="true"
+                    android:gravity="center"
+            />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                    android:id="@+id/table3_1"
+                    android:text="Sensor 201"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fadeScrollbars="true"
+                    android:gravity="center"
+            />
+            <TextView
+                    android:id="@+id/table3_2"
+                    android:text="25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fadeScrollbars="true"
+                    android:gravity="center"
+            />
+            <TextView
+                    android:id="@+id/table3_3"
+                    android:text="YES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fadeScrollbars="true"
+                    android:gravity="center"
+            />
+            <TextView
+                    android:id="@+id/table3_4"
+                    android:text="25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fadeScrollbars="true"
+                    android:gravity="center"
+            />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+            android:id="@+id/ConnectionStatus"
+            android:text="@string/ConnectionStatusString"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars = "vertical"
+            android:fadeScrollbars="false"
+            android:layout_below="@id/TableMain"
+    />
+
+    <Button
+            android:id="@+id/ConnectWifi"
+            android:text="@string/ConnectWifiString"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ConnectionStatus"
+    />
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ConnectWifi">
+        <TextView
+                android:id="@+id/DataOutput"
+                android:text="@string/DataOutputString"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars = "vertical"
+                android:fadeScrollbars="false"
+        />
+    </ScrollView>
+
+</RelativeLayout>
